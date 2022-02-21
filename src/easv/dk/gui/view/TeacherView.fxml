@@ -14,7 +14,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="570.0" prefWidth="737.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="easv.dk.gui.view.TeacherView">
+<AnchorPane prefHeight="570.0" prefWidth="737.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="easv.dk.gui.controller.TeacherViewController">
    <children>
       <TableView fx:id="personTable" prefHeight="570.0" prefWidth="168.0">
          <columns>
