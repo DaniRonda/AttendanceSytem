@@ -28,15 +28,8 @@ public class User {
         return isTeacher;
     }
 
-    public void setIsTeacher(int isTeacher) {
-        this.isTeacher = isTeacher;
-    }
-
     public int getIsInClass() {
         return isInClass;
     }
 
-    public void setIsInClass(int isInClass) {
-        this.isInClass = isInClass;
-    }
 }
