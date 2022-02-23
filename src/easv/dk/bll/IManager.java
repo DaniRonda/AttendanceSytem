@@ -15,7 +15,7 @@ public interface IManager {
 
     void deleteStudent(Student student);
 
-    Student getattendance(Student student);
+    Student getAttendance(Student student);
 
     Teacher createTeacher(Teacher teacher);
 

@@ -35,7 +35,7 @@ public class Manager implements IManager{
     }
 
     @Override
-    public Student getattendance(Student student) { return dalManager.getAttendance(student); }
+    public Student getAttendance(Student student) { return dalManager.getAttendance(student); }
 
     @Override
     public Teacher createTeacher(Teacher teacher) {
