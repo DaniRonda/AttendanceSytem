@@ -1,5 +1,5 @@
 package easv.dk.gui.controller;
-import com.sun.tools.javac.Main;
+import easv.dk.Main;
 import easv.dk.gui.model.Student;
 import easv.dk.gui.util.DateUtil;
 import javafx.event.ActionEvent;
@@ -30,7 +30,7 @@ public class TeacherViewController {
     private Text actiontarget;
     @FXML
     private DatePicker datepicker;
-    private Main main;
+    private easv.dk.Main main;
 
     public TeacherViewController() {
 
@@ -55,7 +55,8 @@ public class TeacherViewController {
 
     public void setMainApp(Main main) {
         this.main = main;
-      studentTable.setItems(main.getStudentData());
+        //System.out.println("main in teacher: "+main);
+        studentTable.setItems(main.getStudentData());
     }
 
     private void showStudentDetails(Student student) {

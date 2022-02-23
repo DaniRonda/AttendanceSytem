@@ -1,5 +1,6 @@
 package easv.dk;
 
+import easv.dk.gui.controller.TeacherViewController;
 import easv.dk.gui.model.Student;
 import javafx.application.Application;
 import javafx.collections.FXCollections;
@@ -12,7 +13,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class Main extends Application {
-    private ObservableList<Student> studentData = FXCollections.observableArrayList();
+    private final ObservableList<Student> studentData = FXCollections.observableArrayList();
 
     public Main() {
         studentData.add(new Student("Chantal", "Brockmeyer"));
@@ -28,7 +29,11 @@ public class Main extends Application {
 
 
     public void start(Stage stage) throws IOException {
-            Parent root = FXMLLoader.load(getClass().getResource("GUI/View/TeacherView.fxml"));
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(getClass().getResource("GUI/View/TeacherView.fxml"));
+            Parent root = loader.load();
+            TeacherViewController teacherViewController = loader.getController();
+            teacherViewController.setMainApp(this);
             Scene scene = new Scene(root);
             stage.setTitle("Welcome :)");
             stage.setScene(scene);
