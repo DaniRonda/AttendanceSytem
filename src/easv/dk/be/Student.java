@@ -5,8 +5,9 @@ package easv.dk.be;
 public class Student extends User {
 
     private String course;
+    private String firstName;
+    private String lastName;
     private int id;
-    private String name;
     private boolean attending;
     private int studentId;
 
@@ -21,9 +22,11 @@ public class Student extends User {
         return id;
     }
 
-    public String getName() {
-        return name;
+    public String getFirstName() {
+        return firstName;
     }
+
+    public String getLastName(){return lastName;}
 
     public String getCourse() {
         return course;

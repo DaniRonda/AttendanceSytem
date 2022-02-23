@@ -4,7 +4,8 @@ public class Teacher extends User {
 
     private int teacherId;
     private int id;
-    private String name;
+    private String firstName;
+    private String lastName;
 
     public Teacher(String firstName, String lastName,  int id, int teacherId) {
         super(firstName, lastName, id);
@@ -15,9 +16,11 @@ public class Teacher extends User {
         return id;
     }
 
-    public String getName() {
-        return name;
+    public String getFirstName() {
+        return firstName;
     }
+
+    public String getLastName(){return lastName;}
 
     public int getTeacherId(){return teacherId;}
 
