@@ -21,7 +21,7 @@ public class Student extends User {
         return id;
     }
 
-    public String getTitle() {
+    public String getName() {
         return name;
     }
 
