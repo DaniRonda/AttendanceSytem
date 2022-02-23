@@ -6,8 +6,8 @@ public class Teacher extends User {
     private int id;
     private String name;
 
-    public Teacher(String name, int id, int teacherId) {
-        super(name, id);
+    public Teacher(String firstName, String lastName,  int id, int teacherId) {
+        super(firstName, lastName, id);
         this.teacherId = teacherId;
     }
 

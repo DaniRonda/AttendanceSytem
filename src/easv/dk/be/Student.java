@@ -10,8 +10,8 @@ public class Student extends User {
     private boolean attending;
     private int studentId;
 
-    public Student(String name, int id, String course, boolean attending, int studentId) {
-        super(name, id);
+    public Student(String firstName, String lastName, int id, String course, boolean attending, int studentId) {
+        super(firstName, lastName, id);
         this.course = course;
         this.attending = attending;
         this.studentId = studentId;
