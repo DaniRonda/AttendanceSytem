@@ -23,5 +23,11 @@ public class StudentDAO {
 
     }
 
+    public Student getAttendance(Student student){
+        return null;
+    }
+
+
+
 
 }

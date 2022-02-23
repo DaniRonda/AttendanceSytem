@@ -15,6 +15,8 @@ public interface IManager {
 
     void deleteStudent(Student student);
 
+    Student getattendance(Student student);
+
     Teacher createTeacher(Teacher teacher);
 
     List<Teacher> getAllTeachers();

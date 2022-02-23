@@ -15,6 +15,8 @@ public interface IDALManager {
 
     void deleteStudent(Student student);
 
+    Student getAttendance(Student student);
+
     Teacher createTeacher(Teacher teacher);
 
     List<Teacher> getAllTeachers();
@@ -22,5 +24,6 @@ public interface IDALManager {
     Teacher updateTeacher(Teacher teacher);
 
     void deleteTeacher(Teacher teacher);
+
 
 }

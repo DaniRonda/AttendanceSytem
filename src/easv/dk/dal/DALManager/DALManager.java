@@ -38,6 +38,11 @@ public class DALManager implements IDALManager {
     }
 
     @Override
+    public Student getAttendance(Student student) {
+        return studentDAO.getAttendance(student);
+    }
+
+    @Override
     public Teacher createTeacher(Teacher teacher) {
         return teacherDAO.createTeacher(teacher);
     }
