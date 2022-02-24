@@ -16,7 +16,7 @@
       <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
       <Text layoutX="54.0" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome! Please scan your card" wrappingWidth="552.13671875">
          <font>
-            <Font name="Calibri" size="35.0" />
+            <Font name="Arial" size="35.0" />
          </font>
       </Text>
       <ImageView fitHeight="123.0" fitWidth="157.0" layoutX="219.0" layoutY="252.0" pickOnBounds="true" preserveRatio="true">
