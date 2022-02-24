@@ -8,16 +8,11 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="628.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="easv.dk.gui.controller.StudentViewController">
    <children>
-      <ToolBar layoutY="-1.0" prefHeight="46.0" prefWidth="628.0" style="-fx-background-color: #08A2D3;" />
+      <ToolBar prefHeight="46.0" prefWidth="628.0" style="-fx-background-color: #08A2D3;" />
       <Label layoutX="26.0" layoutY="14.0" text="Name">
          <font>
             <Font name="Arial Bold" size="14.0" />
          </font></Label>
-      <Label layoutX="120.0" layoutY="12.0" text="Last Name">
-         <font>
-            <Font name="System Bold" size="14.0" />
-         </font>
-      </Label>
       <Label layoutX="235.0" layoutY="12.0" text="Course">
          <font>
             <Font name="System Bold" size="14.0" />
