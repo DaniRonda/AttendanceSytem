@@ -14,7 +14,7 @@
          </image>
       </ImageView>
       <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
-      <Text layoutX="87.0" layoutY="330.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome! Scan your card" wrappingWidth="464.13671875">
+      <Text layoutX="68.0" layoutY="286.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome! Scan your card" wrappingWidth="483.13671875">
          <font>
             <Font name="Calibri Light" size="45.0" />
          </font>
