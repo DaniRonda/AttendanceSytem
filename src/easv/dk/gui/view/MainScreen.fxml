@@ -11,7 +11,7 @@
    <children>
       <ImageView fitHeight="88.0" fitWidth="195.0" layoutX="197.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../../Bilder/Screenshot%202022-02-24%20190712.png" />
+            <Image url="@Screenshot2022-02-24190712.png" />
          </image>
       </ImageView>
       <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
@@ -20,17 +20,17 @@
             <Font name="Arial" size="35.0" />
          </font>
       </Text>
-      <ImageView fitHeight="123.0" fitWidth="157.0" layoutX="219.0" layoutY="252.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="123.0" fitWidth="157.0" layoutX="231.0" layoutY="247.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../../../../../Bilder/hhhhuuu.png" />
+            <Image url="@newlogo.png" />
          </image>
       </ImageView>
-      <JFXButton fx:id="teacherViewButton" buttonType="RAISED" layoutX="515.0" layoutY="308.0" onAction="#showTeacherView" prefHeight="75.0" prefWidth="78.0" text="👨‍🏫" textFill="#e4d2d2">
+      <JFXButton fx:id="teacherViewButton" buttonType="RAISED" layoutX="509.0" layoutY="295.0" onAction="#showTeacherView" prefHeight="88.0" prefWidth="84.0" text="👨‍🏫" textFill="#e4d2d2">
          <font>
             <Font size="28.0" />
          </font>
       </JFXButton>
-      <JFXButton fx:id="studentViewButton" buttonType="RAISED" layoutX="437.0" layoutY="308.0" onAction="#showStudentView" prefHeight="75.0" prefWidth="78.0" text="👨‍🎓" textFill="#ebe3e3">
+      <JFXButton fx:id="studentViewButton" buttonType="RAISED" layoutX="423.0" layoutY="295.0" onAction="#showStudentView" prefHeight="88.0" prefWidth="92.0" text="👨‍🎓" textFill="#ebe3e3">
          <font>
             <Font size="28.0" />
          </font>
