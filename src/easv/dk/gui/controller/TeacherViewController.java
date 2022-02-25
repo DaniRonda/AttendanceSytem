@@ -4,11 +4,9 @@ import easv.dk.gui.model.Student;
 import easv.dk.gui.util.DateUtil;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.DatePicker;
-import javafx.scene.control.Label;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
+import javafx.scene.control.*;
 import javafx.scene.text.Text;
+import javafx.stage.Stage;
 
 public class TeacherViewController {
 
@@ -16,6 +14,7 @@ public class TeacherViewController {
     public TableView<Student> studentTable;
     @FXML
     public TableColumn<Student, String> firstNameColumn;
+    public Button cancelTeacherViewButton;
     @FXML
     private TableColumn<Student, String> lastNameColumn;
     @FXML
@@ -53,11 +52,11 @@ public class TeacherViewController {
                 (observable, oldValue, newValue) -> showStudentDetails(newValue));
     }
 
-    public void setMainApp(Main main) {
+   /* public void setMainApp(Main main) {
         this.main = main;
         //System.out.println("main in teacher: "+main);
         studentTable.setItems(main.getStudentData());
-    }
+    }*/
 
     private void showStudentDetails(Student student) {
         if (student != null) {
@@ -73,6 +72,11 @@ public class TeacherViewController {
             lastAttendanceLabel.setText("");
 
         }
+    }
+
+    public void cancelTeacherView(ActionEvent actionEvent) {
+        Stage stage = (Stage) cancelTeacherViewButton.getScene().getWindow();
+        stage.close();
     }
 }
 
