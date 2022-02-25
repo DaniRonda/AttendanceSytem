@@ -26,8 +26,8 @@
          <font>
             <Font name="Arial Bold" size="14.0" />
          </font></Button>
-      <Button fx:id="cancelStudentViewButton" layoutX="558.0" layoutY="355.0" mnemonicParsing="false" onAction="#cancelStudentView" style="-fx-background-radius: 100;" text="Back" />
-      <Button layoutX="549.0" layoutY="10.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="70.0" text="Stats">
+      <Button fx:id="cancelStudentViewButton" layoutX="564.0" layoutY="361.0" mnemonicParsing="false" onAction="#cancelStudentView" style="-fx-background-radius: 100;" text="Back" />
+      <Button fx:id="statsButton" layoutX="549.0" layoutY="10.0" mnemonicParsing="false" onAction="#showStudentStats" prefHeight="26.0" prefWidth="70.0" text="Stats">
          <font>
             <Font name="Arial Bold" size="14.0" />
          </font>

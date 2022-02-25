@@ -15,7 +15,7 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<AnchorPane prefHeight="570.0" prefWidth="737.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="easv.dk.gui.controller.TeacherViewController">
+<AnchorPane prefHeight="451.0" prefWidth="736.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="easv.dk.gui.controller.TeacherViewController">
    <children>
        <GridPane alignment="center" hgap="10" layoutX="128.0" layoutY="3.0" prefHeight="125.0" prefWidth="572.0" vgap="10" AnchorPane.rightAnchor="0.0" xmlns:fx="http://javafx.com/fxml">
            <padding>
@@ -51,7 +51,7 @@
             <RowConstraints />
          </rowConstraints>
        </GridPane>
-      <TableView fx:id="studentTable" prefHeight="570.0" prefWidth="168.0">
+      <TableView fx:id="studentTable" prefHeight="485.0" prefWidth="168.0">
          <columns>
             <TableColumn fx:id="firstNameColumn" prefWidth="87.0" text="First Name" />
             <TableColumn fx:id="lastNameColumn" prefWidth="87.0" text="Last Name" />
@@ -63,10 +63,10 @@
       <Separator layoutX="182.0" layoutY="119.0" prefHeight="8.0" prefWidth="494.0" />
       <AnchorPane layoutX="298.0" layoutY="465.0" />
       <Label layoutX="182.0" layoutY="139.0" text="Attendance" />
-      <Button fx:id="cancelTeacherViewButton" layoutX="656.0" layoutY="519.0" mnemonicParsing="false" onAction="#cancelTeacherView" style="-fx-background-radius: 100;" text="Back" />
+      <Button fx:id="cancelTeacherViewButton" layoutX="681.0" layoutY="453.0" mnemonicParsing="false" onAction="#cancelTeacherView" style="-fx-background-radius: 100;" text="Back" />
 
            <DatePicker fx:id="datepicker" layoutX="270.0" layoutY="135.0" onAction="#handleDatePickerAction" prefHeight="25.0" prefWidth="129.0" />
-      <AreaChart layoutX="239.0" layoutY="196.0" prefHeight="288.0" prefWidth="380.0">
+      <AreaChart layoutX="239.0" layoutY="165.0" prefHeight="288.0" prefWidth="380.0">
          <xAxis>
             <CategoryAxis side="BOTTOM" />
          </xAxis>

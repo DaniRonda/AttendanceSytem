@@ -6,11 +6,14 @@ import javafx.scene.chart.AreaChart;
 import javafx.scene.chart.Axis;
 import javafx.scene.chart.NumberAxis;
 import javafx.scene.chart.XYChart;
+import javafx.scene.control.Button;
+import javafx.stage.Stage;
 
 public class StudentStatisticsController {
 
     @FXML
     public AreaChart <Number, Number> chart;
+    public Button cancelStatsViewButton;
 
     public void showChart(ActionEvent actionEvent) {
 
@@ -28,4 +31,8 @@ public class StudentStatisticsController {
         series.getData().add(new XYChart.Data<>(2, 85));
     }
 
+    public void cancelStatsView(ActionEvent actionEvent) {
+        Stage stage = (Stage) cancelStatsViewButton.getScene().getWindow();
+        stage.close();
+    }
 }

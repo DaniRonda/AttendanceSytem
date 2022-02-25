@@ -31,5 +31,6 @@
             <NumberAxis side="LEFT" />
          </yAxis>
       </AreaChart>
+      <Button fx:id="cancelStatsViewButton" layoutX="536.0" layoutY="360.0" mnemonicParsing="false" onAction="#cancelStatsView" style="-fx-background-radius: 100;" text="Back" />
    </children>
 </AnchorPane>
