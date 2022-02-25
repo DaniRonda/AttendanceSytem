@@ -24,6 +24,7 @@ public class StudentViewController {
         Parent root = loader.load();
         Stage stage = new Stage();
         stage.setScene(new Scene(root));
+        stage.setTitle("Student stats");
         stage.setResizable(false);
         stage.centerOnScreen();
         stage.show();

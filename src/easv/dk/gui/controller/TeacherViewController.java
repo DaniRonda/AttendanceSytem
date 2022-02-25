@@ -4,11 +4,16 @@ import easv.dk.gui.model.Student;
 import easv.dk.gui.util.DateUtil;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.*;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
-public class TeacherViewController {
+import java.net.URL;
+import java.util.ResourceBundle;
+
+public class TeacherViewController implements Initializable {
 
     @FXML
     public TableView<Student> studentTable;
@@ -43,20 +48,14 @@ public class TeacherViewController {
 
     @FXML
     private void initialize() {
-        firstNameColumn.setCellValueFactory(
-                cellData -> cellData.getValue().firstNameProperty());
-        lastNameColumn.setCellValueFactory(
-                cellData -> cellData.getValue().lastNameProperty());
-        showStudentDetails(null);
+        main = new Main();
+        firstNameColumn.setCellValueFactory(new PropertyValueFactory<>("firstName"));
+        lastNameColumn.setCellValueFactory(new PropertyValueFactory<>("lastName"));
+        System.out.println("size: "+main.getStudentData().size());
         studentTable.getSelectionModel().selectedItemProperty().addListener(
                 (observable, oldValue, newValue) -> showStudentDetails(newValue));
-    }
-
-   /* public void setMainApp(Main main) {
-        this.main = main;
-        //System.out.println("main in teacher: "+main);
         studentTable.setItems(main.getStudentData());
-    }*/
+    }
 
     private void showStudentDetails(Student student) {
         if (student != null) {
@@ -78,5 +77,12 @@ public class TeacherViewController {
         Stage stage = (Stage) cancelTeacherViewButton.getScene().getWindow();
         stage.close();
     }
+
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
+        initialize();
+    }
+
+
 }
 

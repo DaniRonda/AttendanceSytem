@@ -32,8 +32,6 @@ public class Main extends Application {
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(getClass().getResource("GUI/View/MainScreen.fxml"));
             Parent root = loader.load();
-            //TeacherViewController teacherViewController = loader.getController();
-           // teacherViewController.setMainApp(this);
             Scene scene = new Scene(root);
             stage.setTitle("Welcome :)");
             stage.setScene(scene);

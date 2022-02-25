@@ -22,6 +22,7 @@ public class MainScreenController {
         Parent root = loader.load();
         Stage stage = new Stage();
         stage.setScene(new Scene(root));
+        stage.setTitle("Teacher overview");
         stage.setResizable(false);
         stage.centerOnScreen();
         stage.show();
@@ -34,6 +35,7 @@ public class MainScreenController {
         Parent root = loader.load();
         Stage stage = new Stage();
         stage.setScene(new Scene(root));
+        stage.setTitle("Student overview");
         stage.setResizable(false);
         stage.centerOnScreen();
         stage.show();
